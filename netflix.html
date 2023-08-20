@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" href = "netflix.css"></link>
+</head>
+
+<body>
+    <div class="banner-section" id="bannerSection">
+        <div class="container">
+            <div class="d-flex flex-row justify-content-between ">
+                <div class="logo-card">
+                    <img src="https://res.cloudinary.com/ddode3ewq/image/upload/v1692432224/netflix_PNG32_xuwo5f.webp" class="logo">
+                </div>
+                <div class="pt-4 ">
+                    <select class="drop-down" id="dropDown">
+                        <option value="English"> English </option>
+                        <option value="Hindi">हिन्दी </option>
+                    </select>
+                    <button class="sign-button" id="signInBtn">Sign In</button>
+                </div>
+            </div>
+        </div>
+        <div class="title-card d-flex flex-column justify-content-center">
+            <div class="text-center ">
+                <h1 class="home-heading" id="heading">Unlimited movies, TV shows and more</h1>
+                <p class="home-paragraph1" id="paragraph1">Watch anywhere. Cancel anytime.</p>
+                <p class="home-paragraph2" id="paragraph2">Ready to watch? Enter your email to create or restart your membership.</p>
+                <input type="email" class="input-element mb-3" placeholder="Email Adress" />
+                <button class="get-started-button" id="getStartedBtn">
+                    Get Started
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="popup-overlay" id="popupOverlay">
+            <div class="login-popup">
+                <h2>Login</h2>
+                <label for="username">Username</label>
+                <input type="text" id="username" />
+                <label for="password">Password</label>
+                <input type="password" id="password" />
+                <button id="loginBtn">Login</button>
+                <button id="closePopup">Close</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="horizontal-line">
+    </div>
+    <div class="Enjoy-your-tv-section1 p-5 d-flex flex-column justify-content-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-7 text-center d-flex flex-column justify-content-center">
+                    <div>
+                        <h1 class="Enjoy-your-tv-heading" id="enjoyOnTv">Enjoy on your TV</h1>
+                        <p class="Enjoy-your-tv-paragraph" id="watchOnSmart">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 d-flex flex-column justify-content-center">
+                    <img src="https://res.cloudinary.com/ddode3ewq/image/upload/v1692451415/tv_w24mtc.png" class="w-100" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="horizontal-line">
+    </div>
+    <div class="Enjoy-your-tv-section p-5 d-flex flex-column justify-content-center">
+        <div class="container d-flex">
+            <div class="row">
+                <div class="col-12 col-md-7 text-center d-flex flex-column justify-content-center order-md-2">
+                    <div>
+                        <h1 class="Enjoy-your-tv-heading" id="DownloadYour">Download your shows to watch offline</h1>
+                        <p class="Enjoy-your-tv-paragraph" id="saveYourFav">Save your favourites easily and always have something to watch.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 d-flex flex-column justify-content-center order-md-1">
+                    <img src="https://res.cloudinary.com/ddode3ewq/image/upload/v1692460984/dowload_bg_tmbjjs.png" class="w-100 h-70" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="horizontal-line">
+    </div>
+    <div class="Enjoy-your-tv-section p-5 d-flex flex-column justify-content-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-7 text-center d-flex flex-column justify-content-center">
+                    <div>
+                        <h1 class="Enjoy-your-tv-heading" id="watchEveryWhere">Watch everywhere</h1>
+                        <p class="Enjoy-your-tv-paragraph" id="stramUnlimited">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 d-flex flex-column justify-content-center">
+                    <img src="https://res.cloudinary.com/ddode3ewq/image/upload/v1692461761/watch_bg_wc0u4o.png" class="w-100" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="horizontal-line">
+    </div>
+    <div class="Enjoy-your-tv-section p-5 d-flex flex-column justify-content-center">
+        <div class="container d-flex">
+            <div class="row">
+                <div class="col-12 col-md-7 text-center d-flex flex-column justify-content-center order-md-2">
+                    <div>
+                        <h1 class="Enjoy-your-tv-heading" id="createProfile">Create profiles for kids</h1>
+                        <p class="Enjoy-your-tv-paragraph" id="sendChildren">Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 d-flex flex-column justify-content-center order-md-1">
+                    <img src="https://res.cloudinary.com/ddode3ewq/image/upload/v1692522748/children_bg_pt5p0p.png" class="w-100" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="horizontal-line">
+    </div>
+    <div class="frequently-asked-qstn-section text-center p-5">
+        <h1 class="frequently-asked-qstn-heading mb-4" id="FrequentlyAsked">Frequently Asked Questions</h1>
+        <div class="qstn-container text-left  d-flex flex-row justify-content-between mb-1" id="whatIsNetFlix">
+            <h1 class="questions" id="whatIs">What is NetFlix?</h1>
+            <p class="plus-icon">+</p>
+        </div>
+        <div class=" text-left  d-flex flex-row justify-content-between mb-2 " id="solutionContainer1">
+            <h1 class="questions" id="whatIsSolution"></h1>
+        </div>
+        <div class="qstn-container text-left  d-flex flex-row justify-content-between mb-1" id="howMuch">
+            <h1 class="questions" id="howMuchqstn">How much does Netflix cost?</h1>
+            <p class="plus-icon">+</p>
+        </div>
+        <div class=" text-left  d-flex flex-row justify-content-between mb-2" id="solutionContainer2">
+            <h1 class="questions" id="howmuchsol"></h1>
+        </div>
+        <div class="qstn-container text-left  d-flex flex-row justify-content-between mb-1" id="whereCan">
+            <h1 class="questions" id="whereCanqstn">Where can I watch?</h1>
+            <p class="plus-icon">+</p>
+        </div>
+        <div class=" text-left  d-flex flex-row justify-content-between mb-2" id="solutionContainer3">
+            <h1 class="questions" id="whereCanSol"></h1>
+        </div>
+        <div class="qstn-container text-left  d-flex flex-row justify-content-between mb-1" id="howDo">
+            <h1 class="questions" id="howDoqstn">How do I cancel?</h1>
+            <p class="plus-icon">+</p>
+        </div>
+        <div class=" text-left  d-flex flex-row justify-content-between mb-2" id="solutionContainer4">
+            <h1 class="questions" id="howDoSol"></h1>
+        </div>
+        <div class="qstn-container text-left  d-flex flex-row justify-content-between mb-1" id="whatCan">
+            <h1 class="questions" id="whatCanqstn">What can I watch on Netflix?</h1>
+            <p class="plus-icon">+</p>
+        </div>
+        <div class=" text-left  d-flex flex-row justify-content-between mb-2" id="solutionContainer5">
+            <h1 class="questions" id="whatCanSol"></h1>
+        </div>
+        <div class="qstn-container text-left  d-flex flex-row justify-content-between mb-1" id="isNetflix">
+            <h1 class="questions" id="isNetflixqstn">Is Netflix good for kids?</h1>
+            <p class="plus-icon">+</p>
+        </div>
+        <div class=" text-left  d-flex flex-row justify-content-between mb-2" id="solutionContainer6">
+            <h1 class="questions" id="isNetflixSol"></h1>
+        </div>
+        <div class="mt-3">
+            <p class="home-paragraph1">Ready to watch? Enter your email to create or restart your membership.</p>
+            <input type="email" class="input-element mb-3" placeholder="Email Adress" />
+            <button class="get-started-button" id="getStartedBtn">
+                Get Started
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="horizontal-line">
+    </div>
+    <div class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <p class="foot-content">Questions? Call <span class="span-element">000-800-919-1694</span></p>
+                </div>
+                <div class="col-6 col-md-4 mb-4">
+                    <p class="foot-content span-element">FAQ</p>
+                    <p class="foot-content span-element">Media Centre</p>
+                    <p class="foot-content span-element">Ways to Watch</p>
+                    <p class="foot-content span-element">Cookie Preferences</p>
+                    <p class="foot-content span-element">Speed Test</p>
+                    <div class="pt-4 ">
+                        <select class="drop-down" id="dropDown">
+                            <option value="English"> English </option>
+                            <option value="Hindi">हिन्दी </option>
+                        </select>
+                    </div>
+                    <p class="foot-content mt-5">NetFlix India</p>
+                </div>
+                <div class="col-6 col-md-4 mb-4">
+                    <p class="foot-content span-element">Help Centre</p>
+                    <p class="foot-content span-element">Investor Relations</p>
+                    <p class="foot-content span-element">Terms of Use</p>
+                    <p class="foot-content span-element">Corporate Information</p>
+                    <p class="foot-content span-element">Legal Notices</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <p class="foot-content span-element">Account</p>
+                    <p class="foot-content span-element">Jobs</p>
+                    <p class="foot-content span-element">Privacy</p>
+                    <p class="foot-content span-element">Contact Us</p>
+                    <p class="foot-content span-element">Only on Netflix</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src = "netflix.js"></script>
+</body>
+
+</html>
